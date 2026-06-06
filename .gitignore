@@ -1,0 +1,9 @@
+# Power BI temporary/cache files
+*.tmp
+*.temp
+~$*
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
