@@ -1,11 +1,10 @@
-<<<<<<< HEAD
-# power-bi-sales-data-analysis
-=======
 # Power BI Sales Data Analysis
 
-Portfolio project focused on sales performance analysis in Power BI. The report uses a small star-schema dataset with sales facts and customer, product, employee, and geography dimensions.
+This project analyzes sales performance using Power BI. It includes a cleaned CSV dataset, a Power BI report, and dashboard screenshots for quick review.
 
-## Report Preview
+The goal was to build a data analyst-style report: prepare the data, model relationships, create measures, visualize key metrics, and highlight patterns in sales, geography, product categories, and customer segments.
+
+## Dashboard Preview
 
 ### Executive Dashboard
 
@@ -19,39 +18,57 @@ Portfolio project focused on sales performance analysis in Power BI. The report 
 
 ![Sales by country map](screenshots/map.png)
 
-## Project Goals
+## What I Analyzed
 
-- Analyze total sales, quantity, average sales per order, profit, and customer value.
-- Compare sales performance across product categories, countries, and time periods.
-- Explore customer loyalty tiers and identify whether loyalty level is connected to customer profitability.
-- Build an interactive Power BI report with slicers for category, country, and year.
+- Total sales, total quantity, average sales per order, total profit, and average customer value.
+- Sales trends by month.
+- Sales distribution by product category and country.
+- Customer value by loyalty tier.
+- Geographic sales performance using a map view.
+
+## Key Insights
+
+- Clothing generated the highest sales among product categories in the dashboard view.
+- December showed the strongest monthly sales result.
+- Sales were distributed across multiple countries, with the highest values concentrated in a few markets.
+- Loyalty tiers had very similar average customer value, suggesting that tier level did not strongly separate high-value customers in this dataset.
 
 ## Dataset
 
-The dataset contains:
+The project uses a star-schema style dataset:
 
-- `FactSales.csv` - transaction-level sales data
-- `DimCustomer.csv` - customer attributes and loyalty tiers
-- `DimProduct.csv` - product categories
+- `FactSales.csv` - sales transactions
+- `DimCustomer.csv` - customer information and loyalty tiers
+- `DimProduct.csv` - product details and categories
 - `DimEmployee.csv` - employee dimension
 - `DimGeography.csv` - country and geography data
 
-## Tools Used
+## Tools
 
 - Power BI
 - Power Query
 - DAX
 - CSV data modeling
 
-## Files
+## Repository Structure
 
-- `report/sales_data_analysis_dashboard.pbix` - Power BI report file
-- `data/` - source CSV files
-- `screenshots/` - report page previews
+```text
+.
+├── data/
+│   ├── DimCustomer.csv
+│   ├── DimEmployee.csv
+│   ├── DimGeography.csv
+│   ├── DimProduct.csv
+│   └── FactSales.csv
+├── report/
+│   └── sales_data_analysis_dashboard.pbix
+├── screenshots/
+│   ├── customer_details.png
+│   ├── exec_dashboard.png
+│   └── map.png
+└── README.md
+```
 
-## Key Findings
+## How to View
 
-- Clothing generated the highest category sales in the report view.
-- Monthly sales stayed relatively stable, with a visible peak in December.
-- Loyalty tiers showed only a small difference in average customer value, suggesting the tier structure may not strongly separate high-value customers.
->>>>>>> 1e4a4cc (Add Power BI sales analysis project)
+Open `report/sales_data_analysis_dashboard.pbix` in Power BI Desktop. The screenshots above show the main report pages if you only want a quick preview.
